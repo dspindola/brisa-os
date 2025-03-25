@@ -1,0 +1,13 @@
+node:
+  version: '23'
+  packageManager: bun
+  addEnginesConstraint: false
+
+bun:
+  syncProjectWorkspaceDependencies: true
+
+typescript:
+  syncProjectReferences: true
+  syncProjectReferencesToPaths: true
+  includeProjectReferenceSources: false
+  includeSharedTypes: true

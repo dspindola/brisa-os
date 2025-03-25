@@ -1,0 +1,17 @@
+language: typescript
+platform: bun
+type: application
+
+id: web
+
+tags:
+  - web
+  - brisa
+
+tasks:
+  dev:
+    command: "bun run dev"
+    env:
+      NODE_ENV: development
+    options:
+      interactive: true
