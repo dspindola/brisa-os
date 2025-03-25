@@ -1,0 +1,21 @@
+type: library
+platform: bun
+language: typescript
+
+id: ui
+
+tags:
+  - brisa
+  - library
+  - ui
+
+tasks:
+  build-dev:
+    command: "bun --config=./bunfig.dev.toml ./brisa.build.ts"
+    description: "Build the UI library for development"
+    env:
+      BRISA_ENV: "development"
+      NODE_ENV: "development"
+      CUSTOM_CONDITIONS: "source,dev"
+    inputs:
+      - src/**/*

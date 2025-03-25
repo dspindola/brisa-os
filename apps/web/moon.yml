@@ -8,6 +8,9 @@ tags:
   - web
   - brisa
 
+dependsOn:
+  - ui
+
 tasks:
   dev:
     command: "bun run dev"

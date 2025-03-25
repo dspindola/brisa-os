@@ -1,0 +1,9 @@
+{
+  "typescript": {},
+  "json": {},
+  "markdown": {},
+  "toml": {},
+  "biome": {},
+  "excludes": ["**/node_modules", "**/*-lock.json", "**/dist"],
+  "extends": ["../../dprint.json"]
+}

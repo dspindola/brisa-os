@@ -5,20 +5,20 @@
       "name": "brisa-os",
       "devDependencies": {
         "@types/bun": "latest",
-      },
-      "peerDependencies": {
-        "typescript": "^5",
+        "brisa": "0.2.9",
+        "bun-types": "1.2.5",
+        "typescript": "^5.9.0-dev.20250324",
       },
     },
     "apps/web": {
       "name": "web",
       "dependencies": {
-        "brisa": "0.2.9",
+        "ui": "workspace:*",
       },
-      "devDependencies": {
-        "@types/bun": "latest",
-        "typescript": "latest",
-      },
+    },
+    "packages/ui": {
+      "name": "ui",
+      "version": "0.0.1",
     },
   },
   "packages": {
@@ -40,7 +40,9 @@
 
     "meriyah": ["meriyah@6.0.5", "", {}, "sha512-SrMqQCox7TTwtftWKHy/ZaVe+ZRpRl20pAgDo+PS9hzcAJrMjYsBJQPPiLXTnjztrqdfGS+Zz99r6Bwvydta1w=="],
 
-    "typescript": ["typescript@5.8.2", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ=="],
+    "typescript": ["typescript@5.9.0-dev.20250324", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-qehVULhODb1IphPefX/jq0wAXpk6ifAt2lF3mxTsyR3yPDoPkiQdvxw9cURaDjJw6vCijSER6dU8kWmHdWaQnA=="],
+
+    "ui": ["ui@workspace:packages/ui"],
 
     "undici-types": ["undici-types@6.20.0", "", {}, "sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg=="],
 

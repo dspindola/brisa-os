@@ -1,0 +1,23 @@
+{
+  "extends": "../../tsconfig.options.json",
+  "compilerOptions": {
+    "lib": ["ES2022", "DOM"],
+    "forceConsistentCasingInFileNames": true,
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "jsx": "preserve",
+    "jsxImportSource": "brisa",
+    "allowJs": true,
+    "moduleResolution": "bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "baseUrl": "./src",
+    "composite": true,
+    "paths": {
+      "@/*": ["*"]
+    },
+    "emitDeclarationOnly": true,
+    "declaration": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "ui",
+  "version": "0.0.1",
+  "type": "module",
+  "types": "./build/_integrations.d.ts",
+  "scripts": {},
+  "exports": {
+    "./input-client": {
+      "import": "./build/web-components/input-client.client.js",
+      "default": "./build/web-components/input-client.client.js"
+    }
+  },
+  "files": [
+    "build/**/*"
+  ]
+}

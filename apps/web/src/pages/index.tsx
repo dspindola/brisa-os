@@ -1,8 +1,8 @@
-import CounterServer from '@/components/counter-server';
+import CounterServer from "@/components/counter-server";
 
 export default function Homepage() {
   console.log(Bun.version);
-  
+
   return (
     <>
       <div class="hero">
